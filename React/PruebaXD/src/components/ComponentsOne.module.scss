@@ -1,0 +1,74 @@
+@import "../assets/sass/variables.scss";
+
+.container {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(30, 30, 30, 0.1);
+    border-radius: 10px;
+
+    .image {
+        width: 20%;
+        border-radius: 10px;
+    }
+
+    .containerText {
+        margin: 0 10px;
+
+        .containerInformationPersonal {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .name {
+            font-size: 1.5rem;
+            font-weight: 200;
+            text-align: center;
+        }
+        .positionInTheCompany {
+            font-size: 1rem;
+            font-weight: 200;
+            text-align: center;
+        }
+
+        .testimony {
+            &::before,
+            &::after {
+                content: '"';
+            }
+        }
+    }
+}
+
+.container:hover {
+    transform: scale(1.02);
+    transition: transform ease-out 0.7s;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+
+        .image {
+            width: 30%;
+            margin-top: 10px;
+        }
+
+        .testimony {
+            text-align: center;
+        }
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .container {
+        background-color: $backgroundDarkTwo;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    .container {
+        background-color: $backgroundLightTwo;
+    }
+}

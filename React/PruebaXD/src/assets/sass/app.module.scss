@@ -1,0 +1,42 @@
+@import "./variables.scss";
+
+* {
+    font-family: sans-serif;
+}
+
+body {
+    background-color: $backgroundLight;
+}
+
+.header{
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 2rem;
+}
+
+.generalContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 5%;
+}
+
+.footer{
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 1rem;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: $backgroundDark;
+        color: $colorWhite;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    body {
+        background-color: $backgroundLight;
+        color: $colorBlack;
+    }
+}

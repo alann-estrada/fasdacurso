@@ -1,0 +1,14 @@
+$backgroundLight: #f0f2f5;
+$backgroundLightTwo: #f8f9fa;
+$backgroundDark: #333;
+$backgroundDarkTwo: #222;
+$colorWhite: #fff;
+$colorBlack: #000;
+
+:export {
+    backgroundLight: $backgroundLight;
+    backgroundLightTwo: $backgroundLightTwo;
+    backgroundDark: $backgroundDark;
+    colorWhite: $colorWhite;
+    colorBlack: $colorBlack;
+}
